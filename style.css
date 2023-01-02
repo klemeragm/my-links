@@ -8,10 +8,7 @@ img {
 * {
     margin: 0;
     padding: 0;
-}
-
-
-a:hover { 
+}a:hover { 
     background-color: white;
     color: #2961A6;
 }
@@ -47,6 +44,7 @@ a {
     display: block;
     border-radius: 5px;
 }
+
 .container {
     background-color: black; 
     text-align: center;
@@ -55,12 +53,9 @@ a {
     margin-left: auto;
     margin-right: auto;
 }
-
 footer {
     color: white;
 }
-
-
 /*nav a:hover {
      color: rgb(0, 13, 255);
 }*/
