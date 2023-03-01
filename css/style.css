@@ -1,3 +1,20 @@
+:root {
+    --background-color: #121212 ;
+    --color-text: white;
+    --background-color-hover: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.light-theme {
+    --background-color: white;
+    --color-text: black;
+    --background-color-hover: #b6cccc;
+}
+
 img {
    border-radius: 50%;
    width: 320px;
@@ -5,37 +22,6 @@ img {
    border: 5px solid #2961a6;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
-a:hover { 
-    background-color: white;
-    color: #2961A6;
-}
-
-body{
-    color: #2961A6;
-    background-color: #000000;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-h1 {
-    color: white;
-    margin-top: 31px;
-    margin-bottom: 8px;
-}
-p {
-    color: white;
-}
-ul {
-    margin-top: 35px;
-} 
-
-li {
-    margin-bottom: 18px;
-    list-style-type: none;
-}
 
 a {
     background-color: #2961A6;
@@ -46,18 +32,105 @@ a {
     border-radius: 5px;
 }
 
+a:hover { 
+    background-color: white;
+    color: #2961A6;
+}
+
+body {
+    color: #2961A6;
+    background-color: var(--background-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: white;
+    margin-top: 31px;
+    margin-bottom: 8px;
+}
+
+p {
+    color: white;
+}
+
+ul {
+    margin-top: 35px;
+} 
+
+li {
+    margin-bottom: 18px;
+    list-style-type: none;/* Remove bolinhas de marcação */
+}
+
+.li {
+    background-color: #4078c0;
+    font-weight: bold;
+    color: var(--color-text);
+    display: block;
+    padding: 15px;
+    text-decoration: none; /* Remove efeitos no texto */
+    border-radius: 5px;
+}
+
+.li:hover {
+    background-color: var(--background-color-hover);
+    color: #4078c0;
+}
+
+
+.footer {
+    background-color: var(--background-color); 
+    color: var(--color-text);
+    text-decoration: none;
+    margin-bottom: 20px;
+    padding: 18px;
+    display: contents;  
+}
+
+/*.footer:hover {
+          font-weight: bold;
+}*/
+
 .container {
-    background-color: black; 
+    background-color: var(--background-color);
     text-align: center;
     width: 320px;
     margin-top: 41px;
-    margin-left: auto;
+    margin-left: auto; 
     margin-right: auto;
 }
-footer {
-    color: white;
-    /*padding: auto;*/  
-}
+
 /*nav a:hover {
      color: rgb(0, 13, 255);
+}*/
+
+nav {
+    color: var(--color-text);
+    flex: 1;
+    text-align: right;
+    margin-top: 0;
+}
+
+#icon {   
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    /*margin-right: 320px; 
+    margin-left: auto;*/
+}
+
+.icon {
+    width: 30%;
+    height: 30%;
+    margin-right: 320px;
+}
+
+.icon-night {
+    background-image: url("../images/night.png");
+}
+
+.icon-day {
+    background-image: url("../images/day.png");
+}
+/*nav:avatar {
 }*/
