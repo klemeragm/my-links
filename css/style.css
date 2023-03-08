@@ -1,7 +1,7 @@
 :root {
     --background-color: #121212 ;
     --color-text: white;
-    --background-color-hover: white;
+    --background-color-hover: white;    
 }
 
 * {
@@ -11,11 +11,11 @@
 
 .light-theme {
     --background-color: white;
-    --color-text: black;
+    --color-text: black;    
     --background-color-hover: #b6cccc;
 }
 
-img {
+.my-photo {
    border-radius: 50%;
    width: 320px;
    height: 320px;
@@ -23,17 +23,18 @@ img {
 }
 
 
+
 a {
     background-color: #2961A6;
     text-decoration: none;
-    color: white;
+    color: var(--color-text);
     padding: 15px;
     display: block;
     border-radius: 5px;
 }
 
 a:hover { 
-    background-color: white;
+    background-color: var(--background-color-hover);
     color: #2961A6;
 }
 
@@ -44,13 +45,14 @@ body {
 }
 
 h1 {
-    color: white;
+    color: var(--color-text);
     margin-top: 31px;
     margin-bottom: 8px;
 }
 
 p {
-    color: white;
+    color: var(--color-text);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 ul {
@@ -87,9 +89,9 @@ li {
     display: contents;  
 }
 
-/*.footer:hover {
+.footer:hover {
           font-weight: bold;
-}*/
+}
 
 .container {
     background-color: var(--background-color);
@@ -112,25 +114,28 @@ nav {
 }
 
 #icon {   
-    width: 25px;
-    height: 25px;
+    width: 45px;
+    height: 45px;
     cursor: pointer;
+    stroke: white; 
+    display: block;
+    margin: auto;
+    margin-top: 15px;
     /*margin-right: 320px; 
     margin-left: auto;*/
 }
 
-.icon {
+/*.icon {
     width: 30%;
     height: 30%;
     margin-right: 320px;
-}
+} */
 
-.icon-night {
-    background-image: url("../images/night.png");
+/*.icon-night {
+    background-image: url("../images/night.svg");
 }
 
 .icon-day {
-    background-image: url("../images/day.png");
+    background-image: url("../images/day.svg");
 }
-/*nav:avatar {
-}*/
+*/

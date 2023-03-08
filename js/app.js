@@ -35,3 +35,4 @@ icon.onclick = function() {
         localStorage.setItem("theme", "dark");
     }
 }
+
