@@ -31,11 +31,14 @@ a {
     padding: 15px;
     display: block;
     border-radius: 5px;
+    font-weight: bold;
+
 }
 
 a:hover { 
     background-color: var(--background-color-hover);
     color: #2961A6;
+    
 }
 
 body {
