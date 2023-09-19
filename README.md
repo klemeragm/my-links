@@ -1,8 +1,8 @@
 # my-links
 My links
 
-#About
-This is my website with my links and a shortcuts with my portfolios
+# About
+This is my website with my main links and my shortcuts with my portfolios, contacts and others.
 
 #Contribuitors
-@adriana.saty and @joao.viana 
+@Adriana.Saty and @joao.viana 
